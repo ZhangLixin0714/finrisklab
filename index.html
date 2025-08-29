@@ -1,127 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FinRiskLab – Independent Research on Financial Risk &amp; RegTech</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background: #f9f9f9;
-        color: #333;
-      }
-      header {
-        background: #005fa3;
-        color: #fff;
-        padding: 2rem 1rem;
-        text-align: center;
-      }
-      header h1 {
-        margin: 0;
-        font-size: 2.2rem;
-      }
-      header p {
-        margin-top: 0.5rem;
-        font-size: 1.1rem;
-        max-width: 640px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      main {
-        max-width: 800px;
-        margin: 2rem auto;
-        padding: 0 1rem;
-      }
-      section {
-        margin-bottom: 2.5rem;
-      }
-      section h2 {
-        color: #005fa3;
-        margin-bottom: 0.5rem;
-      }
-      section p {
-        margin-bottom: 1rem;
-      }
-      ul {
-        padding-left: 1.5rem;
-      }
-      .cta {
-        display: inline-block;
-        background-color: #007acc;
-        color: #fff;
-        padding: 0.75rem 1.5rem;
-        border-radius: 4px;
-        text-decoration: none;
-        margin-top: 0.5rem;
-      }
-      .cta:hover {
-        background-color: #005fa3;
-      }
-      footer {
-        background: #f1f1f1;
-        padding: 1rem 0;
-        text-align: center;
-        font-size: 0.9rem;
-        color: #666;
-      }
-    </style>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FinRiskLab – Independent Research on Financial Risk & RegTech</title>
+  <meta name="description" content="Independent researcher in financial risk & compliance. Focus: FinRisk Modeling, RegTech, Digital Loan Risk." />
+  <meta property="og:title" content="FinRiskLab – Independent Research" />
+  <meta property="og:description" content="FinRisk Modeling · RegTech · Digital Loan Risk" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://finrisklab.dev/" />
+  <style>
+    :root{
+      --bg:#0f172a;      /* slate-900 */
+      --card:#111827;    /* gray-900 */
+      --muted:#94a3b8;   /* slate-400 */
+      --text:#e5e7eb;    /* gray-200 */
+      --accent:#38bdf8;  /* sky-400 */
+      --link:#7dd3fc;    /* sky-300 */
+      --chip:#1f2937;    /* gray-800 */
+      --border:#1f2937;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+      background:linear-gradient(180deg,#0b1223 0%, #0f172a 100%);
+      color:var(--text);
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:28px 20px 56px}
+    header{padding:18px 0 10px;border-bottom:1px solid var(--border);margin-bottom:28px}
+    h1{margin:0;font-size:28px;letter-spacing:.5px}
+    .tagline{color:var(--muted);margin-top:6px}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+    .chip{background:var(--chip);border:1px solid var(--border);border-radius:999px;padding:6px 10px;color:#cbd5e1;font-size:13px}
+    .hero{display:grid;gap:18px;grid-template-columns:1fr}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px}
+    h2{margin:0 0 8px;font-size:18px}
+    p{margin:8px 0 0;color:#dbeafe;line-height:1.7}
+    a{color:var(--link);text-decoration:none}
+    a:hover{color:#a5f3fc;text-decoration:underline}
+    .grid{display:grid;gap:16px;grid-template-columns:1fr}
+    .list{margin:8px 0 0;padding-left:18px}
+    .list li{margin:6px 0}
+    footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:13px}
+    .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .btn{
+      display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid var(--accent);
+      color:#e0f2fe;background:rgba(56,189,248,.08)
+    }
+    .btn:hover{background:rgba(56,189,248,.18)}
+    @media(min-width:900px){
+      .hero{grid-template-columns:1.2fr .8fr}
+      .grid{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
     <header>
       <h1>FinRiskLab</h1>
-      <p>Independent research in financial risk modeling, regulatory technology (RegTech) and explainable AI for finance.</p>
+      <div class="tagline">Independent researcher in financial risk &amp; compliance</div>
+      <div class="chips">
+        <span class="chip">FinRisk Modeling</span>
+        <span class="chip">RegTech</span>
+        <span class="chip">Digital Loan Risk</span>
+      </div>
     </header>
-    <main>
-      <section id="about">
+
+    <section class="hero">
+      <div class="card">
         <h2>About</h2>
         <p>
-          FinRiskLab is a personal research initiative exploring the intersection of financial risk management, AI and regulatory compliance.  
-          Led by an experienced risk manager and researcher, our goal is to share insights, methodologies and open-source prototypes that advance
-          responsible innovation in financial services.
+          I study risk modeling for consumer finance and digital lending.
+          My current work explores interpretable/ explainable machine learning for credit risk, fairness, and supervisory compliance—aiming to support safer community banking and practical regulator-aligned analytics.
         </p>
-        <p>
-          We are not a commercial service provider and do not offer paid consultancy. All materials shared here are for academic and experimental use.
-        </p>
-      </section>
-      <section id="research">
-        <h2>Research &amp; Projects</h2>
-        <p>
-          Our work covers a range of topics including risk assessment for consumer loans, anti-fraud analytics, credit risk concentration
-          and network anomaly detection. We share code and data sets as research prototypes to foster collaboration and discussion in the
-          community.
-        </p>
-        <p>
-          You can request access to our <em>Risk Monitoring Rules Research Package</em> via the form on our GitHub Pages site. Once your request is
-          submitted, you'll receive a link to download the research package.
-        </p>
-        <a class="cta" href="https://zhanglixin0714.github.io/risk-monitoring-rules/">Request Research Package</a>
-        <a class="cta" href="https://raw.githubusercontent.com/ZhangLixin0714/risk-monitoring-rules/main/risk_rules_demo_package.zip" style="margin-left: 0.5rem;">Download Demo Package</a>
-      </section>
-      <section id="publications">
-        <h2>Publications &amp; Awards</h2>
-        <p>Selected papers and recognitions related to risk modeling and compliance:</p>
-        <ul>
-          <li>Using Explainable Machine Learning to Predict Loan Risk in Consumer Finance (2025).</li>
-          <li>Research on Risk Assessment Indicators in Bank Outsourcing (Master's thesis, 2014).</li>
-          <li>Regulatory Trends and Strategy for Large Commercial Banks – Fake Loans Case (2024).</li>
+        <div class="btnrow">
+          <a class="btn" href="https://scholar.google.com/citations?user=cyrLXoMAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="btn" href="mailto:zhanglixin@finrisklab.dev">Contact</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Quick Links</h2>
+        <ul class="list">
+          <li><a href="https://github.com/ZhangLixin0714/risk-monitoring-rules" target="_blank" rel="noopener">Risk Monitoring Rules – GitHub Repo</a></li>
+          <li><a href="https://raw.githubusercontent.com/ZhangLixin0714/risk-monitoring-rules/main/risk_rules_demo_package.zip">Download: risk_rules_demo_package.zip</a></li>
+          <li><a href="https://zhanglixin0714.github.io/risk-monitoring-rules/" target="_blank" rel="noopener">Form &amp; Acknowledgement Pages</a></li>
         </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
+      </div>
+    </section>
+
+    <section class="grid" style="margin-top:16px">
+      <div class="card">
+        <h2>Research</h2>
         <p>
-          For academic feedback or collaboration inquiries, please email us at
-          <a href="mailto:zhanglixin@finrisklab.dev">zhanglixin@finrisklab.dev</a>.
+          <strong>Using Explainable Machine Learning to Predict Loan Risk in Consumer Finance</strong><br/>
+          Draft/working paper. See profile for citation updates:
+          <a href="https://scholar.google.com/citations?user=cyrLXoMAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.
         </p>
+      </div>
+
+      <div class="card">
+        <h2>Tools</h2>
         <p>
-          <strong>Please note:</strong> this site is for academic purposes only. We do not provide commercial services while employed.
+          Open-source rules and demo package for risk monitoring and analysis:
         </p>
-      </section>
-    </main>
+        <ul class="list">
+          <li><a href="https://raw.githubusercontent.com/ZhangLixin0714/risk-monitoring-rules/main/risk_rules_demo_package.zip">risk_rules_demo_package.zip</a></li>
+          <li><a href="https://github.com/ZhangLixin0714/risk-monitoring-rules" target="_blank" rel="noopener">Repository &amp; scripts</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:16px">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:zhanglixin@finrisklab.dev">zhanglixin@finrisklab.dev</a></p>
+    </section>
+
     <footer>
-      &copy; 2025 FinRiskLab – Independent Research on Financial Risk &amp; RegTech
+      Contact for academic feedback only. No commercial services while employed.
     </footer>
-  </body>
+  </div>
+</body>
 </html>
